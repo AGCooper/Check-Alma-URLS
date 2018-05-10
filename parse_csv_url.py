@@ -10,7 +10,7 @@ def main():
    for line in sys.stdin:
        line = line.rstrip("\n")
        line = line.split(",")
-       sys.stdout.write(line[2] + delim + line[1] + "\n")
+       sys.stdout.write(line[2] + delim + line[1] + delim + "1" + "\n")
 
 if __name__=="__main__":
     sys.exit(main())

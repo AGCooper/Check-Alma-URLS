@@ -1,4 +1,4 @@
-#!/opt/rh/python27/root/usr/bin/python
+#!/usr/bin/python3
 import sys
 import re
 r"""
@@ -43,7 +43,7 @@ def main():
               url = sf_856.group(1)
           else:
             continue
-          print url + delim + mmsid + delim + "1"
+          print(url + delim + mmsid + delim + "1")
   except:
     sys.stderr.write("could not parse lines" + "\n")
 
